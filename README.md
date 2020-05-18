@@ -1,11 +1,11 @@
 <p align="center">
-<h3>I have implemented Material UI Material UI Drawer, Menu for langugage selection, App bar and search bar to improve the UI and UX.</h3>
-<h2>In current website there are too many blank space and real estate available and too many scrolling is needed to view the different data on the site. So I am trying to improve the UI & UX.</h2>
+<h2>I have forked an open source project <a href="https://www.covid19india.org/">https://www.covid19india.org/</a> and implemented Material UI using Material UI Drawer, Menu for language selection, App bar and search bar to improve the UI and UX.</h2>
+<h3>Why? In current website, there are too much blank space and real estate available, but still too many scrolling is needed to view the different data on the site. I would like to improve the user experience.</h3>
 <h3>Changes Done</h3>
 <ul> Old navbar to MUI Drawer</ul>
 <ul> Language selection to MUI Menu</ul>
 <ul> Introducing MUI Appbar to move the search from center of existing page to the app bar.</ul>
-<ul> And some more enhancements coming up...</ul>
+<ul> And some more enhancements coming up... :)</ul>
 
 <img src="https://github.com/JackPriyan/covid19india-react/blob/master/New%20Changes.png?raw=true" width="100%">
 </p>
