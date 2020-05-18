@@ -1,11 +1,15 @@
 <p align="center">
-<h3>New Home Screen with Material UI Drawer and App bar</h3>
+<h3>I have implemented Material UI Material UI Drawer, Menu for langugage selection, App bar and search bar to improve the UI and UX.</h3>
+<h3>Changes</h3>
+<ul> Old navbar to MUI Drawer</ul>
+<ul> Language selection to Menu</ul>
+
 <img src="https://github.com/JackPriyan/covid19india-react/blob/master/New%20Changes.png?raw=true" width="100%">
 </p>
 
 <p align="center">
 <h3>Old Screen forked from <a href="https://www.covid19india.org/">https://www.covid19india.org/</a></h3>
-<img src="https://lh3.googleusercontent.com/-grjTcOMyemYN_JiN3QlkZzgh61D88LNFLj2-8QaqcjLWn_MouQe9zux8ZfMH4R7SLfR-cfHYD1b84KUlPqYucP5gZWTuo2J=s2560" width="100%">
+<img src="https://github.com/JackPriyan/covid19india-react/blob/master/Old%20Screen.png?raw=true" width="100%">
 </p>
 
 <p align="center">
