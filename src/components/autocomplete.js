@@ -7,7 +7,6 @@ import Bloodhound from 'corejs-typeahead';
 import React from 'react';
 import {useState, useCallback} from 'react';
 import {useTranslation} from 'react-i18next';
-import {useDebounce} from 'react-use';
 
 const engine = new Bloodhound({
   initialize: true,
@@ -104,8 +103,7 @@ const useStyles = makeStyles((theme) => ({
 export default function ComboBox() {
   const classes = useStyles();
   const {t} = useTranslation();
-  const [searchValue] = useState('');
-  const [value, setValue] = React.useState(null);
+  const [setValue] = useState(null);
   const [inputValue, setInputValue] = React.useState('');
   const [options, setOptions] = React.useState([]);
 
@@ -162,43 +160,25 @@ export default function ComboBox() {
     essentialsEngine.search(searchInput, essentialsSync);
   }, []);
 
-  useDebounce(
-    () => {
-      if (searchValue) {
-        // handleSearch(searchValue);
-      } else {
-        setResults([]);
-      }
-    },
-    100,
-    [searchValue]
-  );
-
-  if (valueSetter && valueSetter !== prototypeValueSetter) {
-    prototypeValueSetter.call(element, value);
-  } else {
-    valueSetter.call(element, value);
-  }
-
-  const suggestions = [
-    {name: t('Testing Pune')},
-    {name: t('Delhi Shelter')},
-    {name: t('Community Kitchen in Kerala')},
-    {name: t('Groceries Chennai')},
-    {name: t('Senior citizen support bangalore')},
-    {name: t('Delhi Shelter')},
-    {name: t('Community Kitchen in Kerala')},
-    {name: t('Delhi Shelter')},
-  ];
-
   React.useEffect(() => {
     if (inputValue === '') {
+      const suggestions = [
+        {name: t('Testing Pune')},
+        {name: t('Delhi Shelter')},
+        {name: t('Community Kitchen in Kerala')},
+        {name: t('Groceries Chennai')},
+        {name: t('Senior citizen support bangalore')},
+        {name: t('Delhi Shelter')},
+        {name: t('Community Kitchen in Kerala')},
+        {name: t('Delhi Shelter')},
+      ];
       setOptions(suggestions);
       return undefined;
     }
     handleSearch(inputValue);
     // setOptions(suggestions2);
-  }, [value, inputValue, handleSearch, suggestions]);
+    return undefined;
+  }, [inputValue, handleSearch, t]);
 
   return (
     <Autocomplete
