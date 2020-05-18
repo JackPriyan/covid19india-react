@@ -1,4 +1,10 @@
 <p align="center">
+<h3>New Home Screen with Material UI Drawer and App bar</h3>
+<img src="https://github.com/JackPriyan/covid19india-react/blob/master/New%20Changes.png?raw=true" width="100%">
+</p>
+
+<p align="center">
+<h3>Old Screen forked from <a href="https://www.covid19india.org/">https://www.covid19india.org/</a></h3>
 <img src="https://lh3.googleusercontent.com/-grjTcOMyemYN_JiN3QlkZzgh61D88LNFLj2-8QaqcjLWn_MouQe9zux8ZfMH4R7SLfR-cfHYD1b84KUlPqYucP5gZWTuo2J=s2560" width="100%">
 </p>
 
